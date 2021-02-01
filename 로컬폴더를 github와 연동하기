@@ -1,0 +1,17 @@
+로컬폴더를 github와 연동하기
+1. 초기화 시작
+	git init
+2. 계정연결
+	git config --local user.name 자신의 깃허브 유저네임
+	git config --local user.email 자신의 깃허브 이메일
+3. repository 주소연결
+	리파지토리 주소이름을 origin으로 변경
+	git remote add origin https://github.com/Biz_403_01_java.git(새로 만든 원격 주소)
+
+4. 로컬폴더의 프로젝트를 업로드 준비
+	git add . --> 현재 폴더의 모든 것을 업로드 할 수 있도록 압축하라.
+5. 업로드 커멘트 설정
+	git commit -m first
+	
+5. 압축된 로컬 폴더를 업로드
+	git push -u origin master
