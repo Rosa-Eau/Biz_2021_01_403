@@ -1,4 +1,4 @@
-package com.callor.hello;
+package com.callor.var;
 
 public class Variable {
 
@@ -34,7 +34,7 @@ public class Variable {
 		System.out.println(40 / 30);
 		System.out.println(40.0 / 30.0);
 		//단정도 실수 --> 소수점을 여섯자리까지 표기
-		//대정도 실수 --> 소수점을 열여섯자리까지 표기
+		//배정도 실수 --> 소수점을 열여섯자리까지 표기
 		//부동 소수점 값 --> 소수점 이하 값이 없음(정수)
 		//원본값(Source)이 정수일 때의 사칙연산은 언제나 정수,
 		//실수일 때는 언제나 실수의 결과값을 가짐.
