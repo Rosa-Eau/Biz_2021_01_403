@@ -1,6 +1,6 @@
 package com.callor.varriable;
 
-public class Varriable {
+public class Varriable_01 {
 
 	public static void main(String[] args) {
 		
@@ -8,7 +8,7 @@ public class Varriable {
 		int num1 = 0;
 		int num2 = 0;
 		
-		//변수에 변수값 저장
+		//변수에 연산할 값 저장
 		num1 = 30;
 		num2 = 40;
 		
@@ -27,11 +27,29 @@ public class Varriable {
 		result5 = num2 % num1;
 		
 		//변수에 저장된 결과를 Console에 출력
-		System.out.println(result1);
+		//30 + 40 = 70
+		
+		//덧셈
+		System.out.println(num1 
+				+ " + " 
+				+ num2 
+				+ " = " 
+				+  result1);
+		//뺄셈
+		System.out.print(num2);
+		System.out.print(" - ");
+		System.out.print(num1);
+		System.out.print(" = ");
 		System.out.println(result2);
-		System.out.println(result3);
-		System.out.println(result4);
-		System.out.println(result5);
+		
+		//곱셈
+		System.out.println(num1 + " * " + num2 + " = " + result3);
+		
+		//나눗셈
+		System.out.println(num2 + " ÷ " + num1 + " = " + result4); //ㄷ+한자
+		
+		//나머지
+		System.out.println(num2 + " MODE " + num1 + " = " + result5);
 
 	}
 

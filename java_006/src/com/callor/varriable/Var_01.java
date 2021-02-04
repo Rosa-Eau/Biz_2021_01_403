@@ -1,0 +1,52 @@
+package com.callor.varriable;
+
+public class Var_01 {
+	
+	public static void main(String[] args) {
+		
+		//변수를 선언하고 초기화(0저장, clear)
+		int num1 = 0;
+		
+		//변수 num1에 정수 30을 저장하라(할당하라, 대입하라)
+		num1 = 30;
+		
+		//변수를 만들고 값을 저장하는 이유는
+		//이 이후의 코드에서 변수에 담긴 값을 활용하여
+		//연산을 수행하려고 하는 것
+		System.out.println("num1 = " + num1);
+		
+		num1 = 30 + 40;
+		
+		//num1이라는 값에 10이라는 값을 추가하라
+		num1 = num1 + 10;
+		// = 을 중심으로 오른쪽을 먼저 해석
+		//변수 num1엣 저장되어 있는 값(70)과 숫자 10을 덧셈하라
+		//그리고 그 결과(80)를 num1에 저장하라
+		//원래 num1에 저장된 값 70은 clear되고
+		//정수 80이 저장됨
+		
+		num1 = num1 + 10; //90
+		num1 = num1 + 10; //100
+		num1 = num1 + 10; //110
+		
+		
+		num1 = num1 + 20;
+		num1 = num1 + 1;
+		
+		//사칙연산 모두 수행 가능
+		num1 = num1 - 20;
+		num1 = num1 / 2;
+		num1 = num1 * 2;
+		num1 = num1 % 2;		
+		num1 = num1 + (-1);
+		num1 = num1 * (-1);
+		num1 = num1 * (-1);
+		num1 = num1 * (-1);
+		num1 = num1 * (-1);
+		num1 = num1 * (-1);
+		//스위치 변수
+		
+		
+	}
+
+}
