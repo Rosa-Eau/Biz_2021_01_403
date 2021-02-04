@@ -13,7 +13,12 @@ public class Var_03 {
 		intNum2 =40;
 		
 		/*
-		 * 
+		 *  intNum1변수 값을 읽어 오고
+		 *  intNum2변수 값을 읽어 와서
+		 *  두 값을 덧셈한 후
+		 *  어딘가에 저장하라
+		 *  그리고, 어딘가 저장된 값을
+		 *  Console에 출력하라
 		 */
 		
 		System.out.println(intNum1 + intNum2);
