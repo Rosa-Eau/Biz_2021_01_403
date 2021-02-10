@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 /*
- * 배경설명 : 다섯번 안에 숫자를 맞추지 못하면 스핑크스에게 잡아먹힌다!!
+ * 
  * 
  * 1. Random 클래스를 사용하여 1~100까지 임의 수를
  * 생성하여 rndNum변수에 담아 놓는다
