@@ -14,12 +14,10 @@ public class DoNotEatMe {
 		Random rnd = new Random();
 		Scanner scan = new Scanner(System.in);
 		
-		int startNum = scan.nextInt();
-		boolean start = startNum > 0;
-
-		while (start) {
+		while (true) {
 			int rndNum = rnd.nextInt(100) + 1;
-			System.out.println("스핑크스 : 다섯번 안에 숫자를 맞추지 못하면 잡아먹겠다!!");
+			System.out.println("스핑크스 : "
+					+ "다섯번 안에 숫자를 맞추지 못하면 잡아먹겠다!!");
 			System.out.println("=========================================================");
 
 			for (int i = 0; i < 5; i++) {

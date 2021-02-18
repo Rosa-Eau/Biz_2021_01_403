@@ -35,6 +35,14 @@ public class ClassServiceV3 {
 	}
 	
 	public void algebra() {
+		
+//		System.out.print(intNum1);
+//		System.out.print(" + ");
+//		if(3 > 3) {
+//			return;
+//		}
+		
+		
 		int intAdd = intNum1 + intNum2;
 		int intTimes = intNum1 * intNum2;
 		int intDiv = intNum1 / intNum2;
