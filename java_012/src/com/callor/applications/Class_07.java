@@ -16,6 +16,8 @@ public class Class_07 {
 		long num2 = 3;
 		
 		float num3 = 3.0F;
+		num3 = (float)3.0;
+		
 		double num4 = 3.0;
 	}
 
