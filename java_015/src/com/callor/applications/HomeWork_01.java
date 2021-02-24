@@ -11,21 +11,20 @@ public class HomeWork_01 {
 		Random rnd = new Random();
 		PrimeServiceV2 psV2 = new PrimeServiceV2();
 
-		
-		System.out.println(psV2.prime(2));
-		/*
 		int[] num = new int[100];
 
 		for (int i = 0; i < num.length; i++) {
-			num[i] = rnd.nextInt(10) + 1;
+			num[i] = rnd.nextInt(100) + 1;
 		}
+		System.out.println("임의의 정수 100개 중 소수인 수");
+		System.out.print("List = [ ");
 		for (int i = 0; i < num.length; i++) {
 			boolean bYes = psV2.prime(num[i]) < 0;
-			if(bYes) {
-			} else{
-				System.out.println(num[i]);
+			if (bYes) {
+			} else {
+				System.out.print(num[i] + " ");
 			}
 		}
-		*/
+		System.out.print("]");
 	}
 }
