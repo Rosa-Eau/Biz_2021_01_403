@@ -34,7 +34,7 @@ public class Score_06 {
 			float floatAvg = (float)sum / 3;
 			
 			
-			System.out.printf("%d\t%d\t%d\n"
+			System.out.printf("%d\t%d\t%d\t%d\t3.2%f\n"
 					,scoreVO[i].intKor
 					,scoreVO[i].intEng
 					,scoreVO[i].intMath );
