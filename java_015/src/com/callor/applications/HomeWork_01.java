@@ -16,7 +16,7 @@ public class HomeWork_01 {
 		for (int i = 0; i < num.length; i++) {
 			num[i] = rnd.nextInt(100) + 2;
 		}
-		System.out.println("임의의 정수 100개 중 소수인 수");
+		System.out.println("임의의 정수 100개 중 소수인 수들");
 		System.out.print("List = [ ");
 		for (int i = 0; i < num.length; i++) {
 			boolean bYes = psV2.prime(num[i]) < 0;
