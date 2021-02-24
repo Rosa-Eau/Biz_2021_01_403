@@ -23,12 +23,14 @@ public class HomeWork_01 {
 		for (int i = 0; i < num.length; i++) {
 			int result = psV2.prime(num[i]);
 			if (result > 0) {
+				intPrimeCount += 1;
 				intPrimeSum += num[i];
 				System.out.print(num[i] + " ");
 			}
 
 		}
 		System.out.println("]");
+		System.out.println("Count = " + intPrimeCount);
 		System.out.println("Sum = " + intPrimeSum);
 	}
 }
