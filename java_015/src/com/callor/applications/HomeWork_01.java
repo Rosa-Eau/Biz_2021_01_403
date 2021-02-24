@@ -14,7 +14,7 @@ public class HomeWork_01 {
 		int[] num = new int[100];
 
 		for (int i = 0; i < num.length; i++) {
-			num[i] = rnd.nextInt(100) + 1;
+			num[i] = rnd.nextInt(100) + 2;
 		}
 		System.out.println("임의의 정수 100개 중 소수인 수");
 		System.out.print("List = [ ");
