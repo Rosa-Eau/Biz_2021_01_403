@@ -12,6 +12,8 @@ public class HomeWork_01 {
 		PrimeServiceV2 psV2 = new PrimeServiceV2();
 
 		int[] num = new int[100];
+		int intPrimeCount = 0;
+		int intPrimeSum = 0;
 
 		for (int i = 0; i < num.length; i++) {
 			num[i] = rnd.nextInt(100) + 2;
@@ -19,12 +21,14 @@ public class HomeWork_01 {
 		System.out.println("임의의 정수 100개 중 소수인 수들");
 		System.out.print("List = [ ");
 		for (int i = 0; i < num.length; i++) {
-			boolean bYes = psV2.prime(num[i]) < 0;
-			if (bYes) {
-			} else {
+			int result = psV2.prime(num[i]);
+			if (result > 0) {
+				intPrimeSum += num[i];
 				System.out.print(num[i] + " ");
 			}
+
 		}
-		System.out.print("]");
+		System.out.println("]");
+		System.out.println("Sum = " + intPrimeSum);
 	}
 }
