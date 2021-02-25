@@ -9,14 +9,26 @@ public class Score_01 {
 
 		ScoreVO scVO = new ScoreVO();
 		Scanner scan = new Scanner(System.in);
+		int intKor = 0;
+		int intEng = 0;
 		
 		System.out.println("=============================================");
 		System.out.println("성적입력 시스템 v1");
 		System.out.println("=============================================");
+		
+		while(true) {
+				System.out.println("학생 이름을 입력하시오");
+				System.out.print(">> ");
+				scVO.strName = scan.nextLine();
+				if(scVO.strName == "") {
+					System.out.println("!! 입력 값이 없습니다 !!");
+					continue;
+				}else {
+					break;
+				}
+		}
 
-		System.out.println("학생 이름을 입력하시오");
-		System.out.print(">> ");
-		scVO.strName = scan.nextLine();
+	
 		System.out.println("---------------------------------------------");
 		System.out.println("성적을 입력하시오(50 이상 100 이하)");
 		System.out.println("=============================================");
@@ -25,9 +37,9 @@ public class Score_01 {
 			try {
 				System.out.print("국어 >> ");
 				String strKor = scan.nextLine();
-				scVO.intKor = Integer.valueOf(strKor);
-				boolean bYes_1 = scVO.intKor < 50;
-				boolean bYes_2 = scVO.intKor > 100;
+				intKor = Integer.valueOf(strKor);
+				boolean bYes_1 = intKor < 50;
+				boolean bYes_2 = intKor > 100;
 				if (bYes_1 || bYes_2) {
 					System.out.println("!! 50이상 100이하의 숫자만 입력하시오 !!");
 					continue;
@@ -46,9 +58,9 @@ public class Score_01 {
 			try {
 				System.out.print("영어 >> ");
 				String strEng = scan.nextLine();
-				scVO.intEng = Integer.valueOf(strEng);
-				boolean bYes_3 = scVO.intEng < 50;
-				boolean bYes_4 = scVO.intEng > 100;
+				intEng = Integer.valueOf(strEng);
+				boolean bYes_3 = intEng < 50;
+				boolean bYes_4 = intEng > 100;
 				if (bYes_3 || bYes_4) {
 					System.out.println("!! 50이상 100이하의 숫자만 입력하시오 !!");
 					continue;
@@ -86,7 +98,7 @@ public class Score_01 {
 		System.out.println("=============================================");
 		System.out.println("이름\t국어\t영어\t수학");
 		System.out.println("---------------------------------------------"); 
-		System.out.printf("%s\t%d\t%d\t%d\n", scVO.strName, scVO.intKor, scVO.intEng, scVO.intMath);
+		System.out.printf("%s\t%d\t%d\t%d\n", scVO.strName, intKor, intEng, scVO.intMath);
 		System.out.println("=============================================");
 
 	}
