@@ -7,7 +7,7 @@ import com.callor.shop.service.MenuService;
 public class MenuServiceV1 implements MenuService {
 
 	private Scanner scan;
-	private int intSelect;
+	private Integer intSelect;
 
 	public MenuServiceV1() {
 		scan = new Scanner(System.in);
