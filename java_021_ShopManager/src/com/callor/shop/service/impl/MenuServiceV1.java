@@ -36,10 +36,10 @@ public class MenuServiceV1 implements MenuService {
 				if (intSelect >= 1 && intSelect <= 3) {
 					return intSelect;
 				} else {
-					System.out.println("존재하지 않는 요청입니다.");
+					System.out.println("업무 선택은 1 ~ 3까지 중에 선택하세요");
 				}
 			} catch (Exception e) {
-				System.out.println("존재하지 않는 요청입니다.");
+				System.out.println("업무 선택은 QUIT(끝내기), 1 ~ 3까지 정수만 입력할 수 있습니다");
 			}
 		}
 
