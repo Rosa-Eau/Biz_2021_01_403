@@ -39,7 +39,6 @@ public class CartServiceV1 implements CartService {
 					System.out.println("입력 내용이 없습니다.");
 				}
 				break;
-			}
 		}
 		int intPrice = 0;
 		while (true) {
@@ -142,5 +141,4 @@ public class CartServiceV1 implements CartService {
 		System.out.println("-------------------------------------------");
 		System.out.printf("합계\t%d가지\t\t\t%d\n", count, intTotalSum);
 	}
-
 }
