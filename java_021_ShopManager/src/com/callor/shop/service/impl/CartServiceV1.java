@@ -26,6 +26,10 @@ public class CartServiceV1 implements CartService {
 			try {
 				System.out.print("성명 >> ");
 				strUserName = scan.nextLine();
+				if(strUserName.equals("")) {
+					System.out.println("입력 내용이 없습니다.");
+					continue;
+				}
 				break;
 			} catch (Exception e) {
 				System.out.println("알 수 없는 요청입니다.");
@@ -36,6 +40,9 @@ public class CartServiceV1 implements CartService {
 			try {
 				System.out.print("상품명 >> ");
 				strProName = scan.nextLine();
+				if(strProName.equals("")) {
+					System.out.println("입력 내용이 없습니다.");
+				}
 				break;
 			} catch (Exception e) {
 				System.out.println("알 수 없는 요청입니다.");
