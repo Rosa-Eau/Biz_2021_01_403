@@ -23,7 +23,6 @@ public class CartServiceV1 implements CartService {
 		System.out.println("-------------------------------------------");
 		String strUserName = null;
 		while (true) {
-			try {
 				System.out.print("성명 >> ");
 				strUserName = scan.nextLine();
 				if(strUserName.equals("")) {
@@ -31,21 +30,15 @@ public class CartServiceV1 implements CartService {
 					continue;
 				}
 				break;
-			} catch (Exception e) {
-				System.out.println("알 수 없는 요청입니다.");
-			}
 		}
 		String strProName = null;
 		while (true) {
-			try {
 				System.out.print("상품명 >> ");
 				strProName = scan.nextLine();
 				if(strProName.equals("")) {
 					System.out.println("입력 내용이 없습니다.");
 				}
 				break;
-			} catch (Exception e) {
-				System.out.println("알 수 없는 요청입니다.");
 			}
 		}
 		int intPrice = 0;
@@ -117,8 +110,17 @@ public class CartServiceV1 implements CartService {
 		System.out.println("===========================================");
 		System.out.println("출력할 구매자 이름을 입력하세요");
 		System.out.println("-------------------------------------------");
-		System.out.print("이름 >> ");
-		String strInputName = scan.nextLine();
+		String strInputName = null;
+		while(true) {
+			System.out.print("이름 >> ");
+			strInputName = scan.nextLine();
+			if(strInputName.equals("")) {
+				System.out.println("입력 내용이 없습니다.");
+				continue;
+			}
+			break;
+		}
+		
 		System.out.println("===========================================");
 		System.out.println("구매자\t상품명\t단가\t수량\t합계");
 		System.out.println("-------------------------------------------");
