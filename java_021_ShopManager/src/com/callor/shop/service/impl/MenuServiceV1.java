@@ -5,7 +5,7 @@ import java.util.Scanner;
 import com.callor.shop.service.MenuService;
 
 public class MenuServiceV1 implements MenuService {
-
+	//Scanner 클래스를 사용해서 scan 객체를 선언
 	private Scanner scan;
 	private Integer intSelect;
 

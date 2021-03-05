@@ -1,0 +1,2 @@
+Tomas,Tomato,6,1200,7200
+Peggy,Panne,1,6000,6000
