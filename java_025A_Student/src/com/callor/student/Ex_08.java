@@ -20,7 +20,7 @@ public class Ex_08 {
 		System.out.println("소수 리스트");
 		System.out.println(Values.sLine(50));
 		for (int i = 0; i < num.length; i++) {
-			num[i] = rnd.nextInt(90) + 10;
+			num[i] = rnd.nextInt(91)+10;
 			int count = 0;
 			for (count = 2; count < num[i]; count++) {
 				if (num[i] % count == 0) {

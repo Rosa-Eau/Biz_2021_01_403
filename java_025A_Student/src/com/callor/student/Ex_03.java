@@ -6,8 +6,8 @@ public class Ex_03 {
 		
 		int intSum = 0;
 		for(int i = 0 ; i < 100 ; i++) {
-			i = i + 1;
-			intSum += i;
+			int num = i + 1;
+			intSum += num;
 		}
 		System.out.println("1 ~ 100까지 덧셈한 결과 : " + intSum);
 	}
